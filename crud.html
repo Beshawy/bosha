@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="imgs/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/crud.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="crud">
+        <div class="head text-center">
+            <h2 class="m-5">BookMark</h2><hr>
+            <p>
+               <span>Bookmark</span>  your favorite sites 
+            </p>
+        </div>
+         </div>
+         <div class="output">
+             <div class="mb-3 form">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <label for="formGroupExampleInput" class="form-label1">Site Name</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" onkeyup="" placeholder="Bookmark Name">
+          </div>
+          <div class="mb-3 form">
+            <i class="fa-solid fa-lock"></i>
+            <label for="formGroupExampleInput2" class="form-label2">Site URl</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Website URL">
+          </div>
+          <div class="submit text-center mb-3">
+             <button class="btn btn-primary text-center" id="submit" type="submit">Submit</button>
+          </div>
+         </div>
+          <hr>
+          <table class="text-center">
+            <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+            <tbody id="tbody"> 
+          
+            </tbody>
+          </table>
+         <script src="js/crud.js"></script>
+         <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
